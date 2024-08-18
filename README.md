@@ -50,4 +50,4 @@ You can adjust the value of `time.sleep()` in the script to shorten or lengthen 
 
 Once again, this project is purely for experimental purposes, tested on your home router. After filling the DHCPv4 address pool, new devices may indeed be unable to obtain an IPv4 address. If your router doesn’t have IPv6 enabled, your new devices won’t be able to connect to the internet. Additionally, if the code runs continuously and DHCP is constantly being occupied, the original device’s IPv4 address might also be taken when its lease expires (assuming there’s no MAC-to-IP binding). The original device might then be treated as a new device, unable to connect to the network. At that point, the owner’s only options are to connect via Ethernet to access the management interface and clear the address pool, or to reset the router. If their router has IPv6 enabled, new devices can still connect and access the internet since DHCPv6 and DHCPv4 are independent—at least your neighbor will benefit from IPv6 adoption.
 
-Feel free to discuss this as a learning experience!
+Feel free to discuss this—I’m eager to learn from your thoughts and experiences!
